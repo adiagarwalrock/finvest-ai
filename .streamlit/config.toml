@@ -1,3 +1,13 @@
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = true
+
+[server]
+runOnSave = true
+maxUploadSize = 100
+
 [theme]
 base="light"
 primaryColor="#4bc3ff"

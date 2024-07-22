@@ -59,7 +59,11 @@ get_analyst_recommendations_tool = FunctionTool.from_defaults(
 
 
 prefix_msgs = [
-    ChatMessage(role=MessageRole.SYSTEM, content=prompts.GPT_FINANCIAL_ANALYST_SYS_STR)
+    ChatMessage(role=MessageRole.SYSTEM, content=prompts.GPT_FINANCIAL_ANALYST_SYS_STR),
+    ChatMessage(
+        role=MessageRole.USER,
+        content="Use emojis in the response and Before response, I want you to think through is that the response generated is correct and elaborate on your reasoning before you give the final answer.",
+    ),
 ]
 
 
